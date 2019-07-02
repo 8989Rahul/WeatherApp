@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import SearchBar from '../container/SearchBar';
-
+import React, { Component } from "react";
+import SearchBar from "../container/SearchBar";
+import WeatherList from "../container/WeatherList";
 
 export default class App extends Component {
   render() {
     return (
-      <SearchBar></SearchBar>
+      <React.Fragment>
+        <SearchBar />
+        <WeatherList />
+      </React.Fragment>
     );
   }
 }
